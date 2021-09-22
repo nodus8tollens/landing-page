@@ -1,4 +1,5 @@
 body{
+    font-family: Helvetica, sans-serif;
     margin: 0;
     width: 100%;
     height: 100%;
@@ -9,28 +10,46 @@ body{
 
 header{
     background-color: #1F2937;
+    padding-top: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: flex-end;
 }
+
+
 
 header span{
     font-size: 24px;
     color: #F9FAF8;
 }
 
+a{
+    color: #F9FAF8;
+    text-decoration: none;
+    margin: 8px;
+}
+
+header, .first{
+    padding: 0px 250px 150px 250px;
+
+}
+
 .first{
     background-color: #1F2937;
     display: flex;
+    justify-content: space-between;
+    gap: 80px;
 }
 
-button{
-    background-color: #3882F6;
+#firstButton{
+    border-color: #3882F6;
 }
 
 h1{
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    margin: 0px;
 }
 
 .first h2{
@@ -41,11 +60,23 @@ h1{
 .firstText{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
+
+#imgPlaceholder{
+    display: block;
+    max-width:500px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+}
+
 
 .second{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
 }
 
 .second h2{
@@ -56,42 +87,83 @@ h1{
 
 .secondImgBox{
     display: flex;
+}
 
+figure{
+    width: 150px;
+    padding: 0px;
+    text-align: center;
+}
+
+figure img{
+    border-color: #3882F6;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+figcaption{
+    max-width: inherit;
+    color: #1F2937;
 }
 
 .third{
     background-color: #E5E7EB;
     display: flex;
     flex-direction: column;
+    padding: 100px 250px;
 }
 
 .third p{
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
+    margin: 0px;
+    padding: 0px;
 }
 
 #signature{
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
+    text-align: right;
+    margin: 0px;
 }
 
 .fourth{
     display: flex;
-}
-
-.fourthAction{
-    display: flex;
-}
-
-.fourthActionCall{
-    display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px 200px;
+    padding: 50px 200px;
+    border-radius: 10px;
+    color: #F9FAF8;
     background-color: #3882F6;
 }
 
+#fourthBold{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+}
+#fourthNormal{
+    margin: 0px;
+}
+button{
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    flex-shrink: 0;
+}
+
 footer{
-    background-color: #1F2937;
+    color: #F9FAF8;
     display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    padding: 40px 500px;
 }
